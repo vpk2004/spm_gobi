@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SPM Lorry Workshop &amp; Transport</title>
+  <meta name="description" content="Contact SPM Lorry Workshop & Transport for heavy vehicle repairs, workshop support, breakdown assistance and lorry transport enquiries in Modachur, Tamil Nadu.">
+  <meta name="theme-color" content="#082b59">
+  <link rel="icon" type="image/svg+xml" href="spm-logo.svg">
+
+  <style>
+    /* =========================================================
+       SPM LORRY WORKSHOP & TRANSPORT
+       CONTACT PAGE — NAVY BLUE & YELLOW
+       CSS is embedded in this HTML file.
+       ========================================================= */
+
+    :root {
+      --navy: #082b59;
+      --navy-dark: #06182e;
+      --navy-light: #104783;
+      --yellow: #ffd400;
+      --white: #ffffff;
+      --light-bg: #f1f6ff;
+      --muted: #64748b;
+      --border: #d8e2f0;
+      --success: #15803d;
+      --danger: #b91c1c;
+      --radius: 14px;
+      --shadow: 0 16px 45px rgba(8, 43, 89, 0.12);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--navy-dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    input, select, textarea, button { font: inherit; }
+    a { color: inherit; }
+
+    .contact-section {
+      min-height: 100vh;
+      padding: 80px 20px;
+      background:
+        radial-gradient(circle at top right, rgba(255, 212, 0, 0.12), transparent 32%),
+        var(--light-bg);
+    }
+
+    .contact-container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .contact-intro {
+      max-width: 760px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .contact-tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 14px;
+      border-radius: 50px;
+      background: var(--yellow);
+      color: var(--navy-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+    }
+
+    .contact-intro h1 {
+      margin: 0 0 16px;
+      color: var(--navy);
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.2;
+    }
+
+    .contact-intro > p {
+      max-width: 650px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 16px;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.5fr);
+      gap: 30px;
+      align-items: stretch;
+    }
+
+    .contact-info {
+      padding: 36px 30px;
+      border-radius: var(--radius);
+      background: linear-gradient(145deg, var(--navy), var(--navy-light));
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info h2 {
+      margin: 0 0 12px;
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .contact-info > p {
+      margin: 0 0 30px;
+      color: #dbeafe;
+      font-size: 15px;
+    }
+
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+      margin-bottom: 26px;
+    }
+
+    .contact-icon {
+      display: flex;
+      flex: 0 0 44px;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--yellow);
+      color: var(--navy-dark);
+      font-size: 23px;
+      font-weight: 700;
+    }
+
+    .contact-info-item h3 {
+      margin: 0 0 5px;
+      color: var(--yellow);
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .contact-info-item p,
+    .contact-info-item a {
+      display: block;
+      margin: 0 0 5px;
+      color: var(--white);
+      font-size: 14px;
+      overflow-wrap: anywhere;
+      text-decoration: none;
+    }
+
+    .contact-info-item a:hover { color: var(--yellow); }
+
+    .contact-whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 12px;
+      padding: 13px 16px;
+      border: 2px solid var(--yellow);
+      border-radius: 8px;
+      color: var(--yellow);
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .contact-whatsapp-link:hover {
+      background: var(--yellow);
+      color: var(--navy-dark);
+    }
+
+    .contact-form {
+      min-width: 0;
+      padding: 36px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .form-heading { margin-bottom: 28px; }
+
+    .form-heading h2 {
+      margin: 0 0 8px;
+      color: var(--navy);
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .form-heading p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: block;
+      min-width: 0;
+      margin-bottom: 20px;
+    }
+
+    .form-row label { margin-bottom: 0; }
+
+    .contact-form label > span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--navy);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      display: block;
+      width: 100%;
+      min-width: 0;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      background: #fbfdff;
+      color: var(--navy-dark);
+      font-size: 14px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .contact-form input,
+    .contact-form select { min-height: 48px; }
+
+    .contact-form textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: #8492a6; }
+
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      border-color: var(--navy-light);
+      background: var(--white);
+      box-shadow: 0 0 0 3px rgba(16, 71, 131, 0.12);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 50px;
+      padding: 13px 24px;
+      border: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 800;
+      transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+    }
+
+    .btn-dark { background: var(--navy); color: var(--white); }
+
+    .btn-dark:hover {
+      background: var(--yellow);
+      color: var(--navy-dark);
+      transform: translateY(-2px);
+    }
+
+    .submit-btn { width: 100%; }
+
+    .form-status {
+      margin: 14px 0 0;
+      color: var(--success);
+      font-size: 14px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .form-status:empty { display: none; }
+    .form-status.error { color: var(--danger); }
+
+    .form-disclaimer {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.7;
+    }
+
+    .contact-form button:focus-visible,
+    .contact-info a:focus-visible {
+      outline: 3px solid var(--yellow);
+      outline-offset: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .contact-section { padding: 65px 20px; }
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-info, .contact-form { padding: 30px; }
+    }
+
+    @media (max-width: 600px) {
+      .contact-section { padding: 45px 14px; }
+      .contact-intro { margin-bottom: 30px; }
+      .contact-intro h1 { font-size: 31px; }
+      .contact-intro > p { font-size: 14px; }
+      .contact-layout { gap: 20px; }
+      .contact-info, .contact-form {
+        padding: 23px 18px;
+        border-radius: 12px;
+      }
+      .contact-info h2, .form-heading h2 { font-size: 23px; }
+      .form-row { grid-template-columns: 1fr; gap: 20px; }
+      .contact-form input, .contact-form select, .contact-form textarea { font-size: 16px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+
+        <header class="contact-intro">
+          <span class="contact-tag" data-i18n="contactTag">CONTACT SPM</span>
+          <h1 data-i18n="contactTitle">Let's Get Your Lorry Moving</h1>
+          <p data-i18n="contactDescription">
+            Contact us for workshop services, heavy vehicle repairs,
+            breakdown assistance and lorry transport requirements.
+          </p>
+        </header>
+
+        <div class="contact-layout">
+          <aside class="contact-info">
+            <h2 data-i18n="contactInfoTitle">Contact Information</h2>
+            <p data-i18n="contactInfoDescription">Tell us what you need. Our team is ready to help.</p>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">☎</span>
+              <div>
+                <h3 data-i18n="phoneLabel">PHONE</h3>
+                <a href="tel:+919443896946">Vaudevan M: 94438 96946</a>
+                <a href="tel:+919488778998">MuthuSamy: 94887 78998</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">⌖</span>
+              <div>
+                <h3 data-i18n="addressLabel">LOCATION</h3>
+                <p data-i18n="addressText">Periye Vaikal, Near Bus Stand, Tamil Nadu, India</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <span class="contact-icon" aria-hidden="true">◷</span>
+              <div>
+                <h3 data-i18n="serviceLabelInfo">SERVICES</h3>
+                <p data-i18n="serviceInfo">Lorry repair, maintenance, breakdown support and goods transport.</p>
+              </div>
+            </div>
+
+            <a class="contact-whatsapp-link"
+               href="https://wa.me/919443896946"
+               target="_blank"
+               rel="noopener noreferrer"
+               data-i18n="directWhatsapp">Chat Directly on WhatsApp ↗</a>
+          </aside>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-heading">
+              <h2 data-i18n="formTitle">Send a Service Enquiry</h2>
+              <p data-i18n="formIntro">Complete the form to prepare your enquiry.</p>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span data-i18n="nameLabel">Full Name *</span>
+                <input name="name" type="text" autocomplete="name"
+                       placeholder="Enter your name" data-i18n-placeholder="namePlaceholder"
+                       minlength="2" maxlength="100" required>
+              </label>
+
+              <label>
+                <span data-i18n="emailLabel">Email Address</span>
+                <input name="email" type="email" autocomplete="email"
+                       placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder"
+                       maxlength="254">
+              </label>
+            </div>
+
+            <div class="form-row">
+              <label>
+                <span data-i18n="phoneInputLabel">Phone Number *</span>
+                <input name="phone" type="tel" autocomplete="tel"
+                       placeholder="Enter your phone number" data-i18n-placeholder="phonePlaceholder"
+                       minlength="7" maxlength="20" pattern="[0-9+() -]{7,20}"
+                       title="Enter a valid phone number using digits, spaces, +, brackets or hyphens."
+                       data-i18n-title="phoneValidation" required>
+              </label>
+
+              <label>
+                <span data-i18n="serviceLabel">Enquiry Type *</span>
+                <select name="service" required>
+                  <option value="" data-i18n="chooseService">Choose a service</option>
+                  <option value="Workshop Support">Workshop Support</option>
+                  <option value="Heavy Vehicle Repair">Heavy Vehicle Repair</option>
+                  <option value="Engine Repair / Overhauling">Engine Repair / Overhauling</option>
+                  <option value="Gearbox / Clutch Repair">Gearbox / Clutch Repair</option>
+                  <option value="Brake / Suspension Repair">Brake / Suspension Repair</option>
+                  <option value="Electrical / Battery Service">Electrical / Battery Service</option>
+                  <option value="Tyre Service">Tyre Service</option>
+                  <option value="Periodic Servicing">Periodic Servicing</option>
+                  <option value="Breakdown Assistance">Breakdown Assistance</option>
+                  <option value="On-Site Lorry Repair">On-Site Lorry Repair</option>
+                  <option value="Lorry Load Transport">Lorry Load Transport</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="message-label">
+              <span data-i18n="detailsLabel">Vehicle / Transport Details *</span>
+              <textarea name="message" rows="5" minlength="10" maxlength="2000"
+                placeholder="For transport: pickup location, destination and load details. For workshop or breakdown: vehicle details and current location."
+                data-i18n-placeholder="detailsPlaceholder" required></textarea>
+            </label>
+
+            <button class="btn btn-dark submit-btn" type="submit">
+              <span data-i18n="submitButton">Prepare Enquiry</span>
+              <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <p class="form-disclaimer" data-i18n="disclaimer">
+              This form opens WhatsApp with your enquiry. Review the message and press Send in WhatsApp.
+              Information is not stored on this website.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    /* =========================================================
+       SPM LORRY WORKSHOP & TRANSPORT
+       CONTACT FORM + WHATSAPP
+       JavaScript is embedded in this HTML file.
+       ========================================================= */
+
+    (() => {
+      "use strict";
+
+      // WhatsApp number must include country code, without + or spaces.
+      const WHATSAPP_NUMBER = "919443896946";
+      const contactForm = document.getElementById("contactForm");
+      const formStatus = document.getElementById("formStatus");
+
+      if (!contactForm) return;
+
+      const messages = {
+        en: {
+          opening: "Opening WhatsApp with your enquiry. Review the message and press Send.",
+          invalid: "Please complete all required fields correctly.",
+          name: "Name",
+          phone: "Phone",
+          email: "Email",
+          noEmail: "Not provided",
+          service: "Enquiry Type",
+          details: "Vehicle / Transport Details",
+          heading: "New Service Enquiry",
+          footer: "Sent through the SPM website contact form."
+        },
+        ta: {
+          opening: "உங்கள் விசாரணையுடன் WhatsApp திறக்கப்படுகிறது. செய்தியைச் சரிபார்த்து Send என்பதை அழுத்தவும்.",
+          invalid: "தேவையான அனைத்து விவரங்களையும் சரியாக நிரப்பவும்.",
+          name: "பெயர்",
+          phone: "தொலைபேசி",
+          email: "மின்னஞ்சல்",
+          noEmail: "வழங்கப்படவில்லை",
+          service: "விசாரணை வகை",
+          details: "வாகனம் / போக்குவரத்து விவரங்கள்",
+          heading: "புதிய சேவை விசாரணை",
+          footer: "SPM இணையதளப் படிவத்தின் மூலம் அனுப்பப்பட்டது."
+        }
+      };
+
+      function getLanguage() {
+        const language = (document.documentElement.lang || "en").toLowerCase();
+        return language.startsWith("ta") ? "ta" : "en";
+      }
+
+      function showStatus(message, isError = false) {
+        if (!formStatus) return;
+        formStatus.textContent = message;
+        formStatus.classList.toggle("error", isError);
+      }
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const language = getLanguage();
+        const text = messages[language];
+
+        if (!contactForm.reportValidity()) {
+          showStatus(text.invalid, true);
+          return;
+        }
+
+        const data = new FormData(contactForm);
+        const name = String(data.get("name") || "").trim();
+        const email = String(data.get("email") || "").trim();
+        const phone = String(data.get("phone") || "").trim();
+        const service = String(data.get("service") || "").trim();
+        const details = String(data.get("message") || "").trim();
+
+        if (name.length < 2 || !phone || !service || details.length < 10) {
+          showStatus(text.invalid, true);
+          return;
+        }
+
+        const whatsappMessage = [
+          "🚛 SPM LORRY WORKSHOP & TRANSPORT",
+          "",
+          text.heading,
+          "--------------------------------",
+          `${text.name}: ${name}`,
+          `${text.phone}: ${phone}`,
+          `${text.email}: ${email || text.noEmail}`,
+          `${text.service}: ${service}`,
+          "",
+          `${text.details}:`,
+          details,
+          "",
+          text.footer
+        ].join("\n");
+
+        const whatsappURL =
+          `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        showStatus(text.opening, false);
+        window.location.href = whatsappURL;
+      });
+    })();
+  </script>
+</body>
+</html>
