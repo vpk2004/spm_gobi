@@ -5,28 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Our Workshop Services | SPM Lorry Workshop & Transport</title>
-  <link rel="icon" type="images/png" href="icon_spm.png"> 
+  <title>Our Workshop Services | SPM Lorry Workshop &amp; Transport</title>
+
+  <!-- Website Tab Icon: keep only one favicon -->
+  <link rel="icon" type="image/png" href="images/icon_spm.png">
+
   <meta name="description"
-    content="Explore heavy commercial vehicle repair, engine servicing, brake repair, electrical work, fabrication and roadside breakdown assistance at SPM Lorry Workshop, Modachur, Tamil Nadu.">
+    content="Explore 30 heavy vehicle workshop services, including engine repair, brake servicing, electrical work, fabrication and roadside breakdown assistance at SPM Lorry Workshop, Modachur, Tamil Nadu.">
 
   <meta name="theme-color" content="#082b59">
 
-  <!-- Website Tab Icon -->
-<<<<<<< HEAD
-  <link rel="icon" type="image/png" href="logo.png">
-=======
- <link rel="icon" href="images/icon_spm.png" type="image/png">
->>>>>>> e55a84ec8d3ce10d3b9b4c3ef4d41a915e655d5d
-
-  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 
   <style>
-    /* =========================================
-       ROOT VARIABLES AND RESET
-    ========================================= */
-
     :root {
       --navy: #082b59;
       --navy-dark: #061d3d;
@@ -62,8 +53,8 @@
       text-decoration: none;
     }
 
-    button,
-    a {
+    a,
+    button {
       -webkit-tap-highlight-color: transparent;
     }
 
@@ -71,13 +62,10 @@
       width: 100%;
       max-width: 1250px;
       margin: 0 auto;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 0 20px;
     }
 
-    /* =========================================
-       TOP BAR
-    ========================================= */
+    /* TOP BAR */
 
     .topbar {
       background: var(--navy);
@@ -100,17 +88,15 @@
     }
 
     .topbar-contact a {
-      transition: color 0.25s ease;
       white-space: nowrap;
+      transition: color 0.25s ease;
     }
 
     .topbar-contact a:hover {
       color: var(--yellow);
     }
 
-    /* =========================================
-       HEADER AND NAVIGATION
-    ========================================= */
+    /* HEADER */
 
     .header {
       position: sticky;
@@ -122,6 +108,7 @@
     }
 
     .navbar {
+      position: relative;
       min-height: 88px;
       display: flex;
       align-items: center;
@@ -191,7 +178,7 @@
       font-weight: 800;
       white-space: nowrap;
       transition: transform 0.25s ease,
-                  box-shadow 0.25s ease;
+        box-shadow 0.25s ease;
     }
 
     .nav-cta:hover {
@@ -220,9 +207,7 @@
       transition: transform 0.2s ease;
     }
 
-    /* =========================================
-       WORKSHOP SERVICES SECTION
-    ========================================= */
+    /* SERVICES SECTION */
 
     .workshop-services {
       padding: 80px 0;
@@ -263,7 +248,7 @@
     }
 
     .section-header h1 span {
-      color: #c49d00;
+      color: #a98600;
     }
 
     .section-header > p {
@@ -292,9 +277,7 @@
       font-size: 18px;
     }
 
-    /* =========================================
-       SERVICES GRID
-    ========================================= */
+    /* SERVICES GRID */
 
     .services-grid {
       display: grid;
@@ -303,10 +286,6 @@
       align-items: stretch;
     }
 
-    /* =========================================
-       SERVICE CATEGORY CARDS
-    ========================================= */
-
     .service-category {
       overflow: hidden;
       background: var(--white);
@@ -314,8 +293,8 @@
       border-radius: 16px;
       box-shadow: 0 8px 28px rgba(8, 43, 89, 0.055);
       transition: transform 0.3s ease,
-                  box-shadow 0.3s ease,
-                  border-color 0.3s ease;
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
     }
 
     .service-category:hover {
@@ -365,13 +344,12 @@
       font-size: 12px;
     }
 
-    /* =========================================
-       SERVICE LIST
-    ========================================= */
+    /* SERVICE LIST */
 
     .service-list {
       list-style: none;
       padding: 13px 24px 20px;
+      counter-reset: none;
     }
 
     .service-list li {
@@ -408,9 +386,7 @@
       font-weight: 900;
     }
 
-    /* =========================================
-       WHATSAPP CONTACT BANNER
-    ========================================= */
+    /* CONTACT BANNER */
 
     .workshop-cta {
       display: flex;
@@ -459,7 +435,7 @@
       font-size: 14px;
       font-weight: 800;
       transition: background 0.25s ease,
-                  color 0.25s ease;
+        color 0.25s ease;
     }
 
     .cta-button:hover {
@@ -467,9 +443,7 @@
       color: var(--yellow);
     }
 
-    /* =========================================
-       FOOTER
-    ========================================= */
+    /* FOOTER */
 
     .footer {
       padding-top: 40px;
@@ -487,6 +461,8 @@
     }
 
     .footer-brand {
+      display: inline-flex;
+      align-items: center;
       gap: 12px;
     }
 
@@ -553,9 +529,7 @@
       font-weight: 700;
     }
 
-    /* =========================================
-       TABLET RESPONSIVE
-    ========================================= */
+    /* TABLET */
 
     @media (max-width: 1000px) {
       .navbar {
@@ -589,6 +563,8 @@
         gap: 8px 14px;
       }
     }
+
+    /* MOBILE NAVIGATION */
 
     @media (max-width: 800px) {
       .menu-toggle {
@@ -654,9 +630,7 @@
       }
     }
 
-    /* =========================================
-       MOBILE RESPONSIVE
-    ========================================= */
+    /* SMALL MOBILE */
 
     @media (max-width: 600px) {
       .container {
@@ -676,6 +650,7 @@
 
       .topbar-contact {
         justify-content: flex-start;
+        flex-wrap: wrap;
         font-size: 11px;
       }
 
@@ -755,10 +730,6 @@
       }
     }
 
-    /* =========================================
-       SMALL MOBILE
-    ========================================= */
-
     @media (max-width: 360px) {
       .brand img {
         width: 150px;
@@ -795,9 +766,7 @@
       }
     }
 
-    /* =========================================
-       ACCESSIBILITY
-    ========================================= */
+    /* ACCESSIBILITY */
 
     a:focus-visible,
     button:focus-visible {
@@ -822,9 +791,7 @@
 
 <body id="home">
 
-  <!-- =========================================
-       TOP BAR
-  ========================================= -->
+  <!-- TOP BAR -->
 
   <div class="topbar">
     <div class="container topbar-content">
@@ -832,7 +799,7 @@
       <p>🚛 HEAVY VEHICLE SERVICE · WORKSHOP · TRANSPORT</p>
 
       <div class="topbar-contact">
-        <span>📍 Modachur, Tamil Nadu</span>
+         <a href="https://www.google.com/maps/place/S.P.M+Lorry+Workshop/@11.4162478,77.431766,740m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3ba917005aa856c9:0xae82d59c494c761!8m2!3d11.4162426!4d77.4343409!16s%2Fg%2F11wy0bgy2m?entry=ttu&g_ep=EgoyMDI2MTAyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">📍 Modachur, Tamil Nadu</a>
 
         <a href="tel:+919443896946">
           📞 +91 94438 96946
@@ -849,14 +816,12 @@
     </div>
   </div>
 
-  <!-- =========================================
-       WEBSITE HEADER
-  ========================================= -->
+  <!-- WEBSITE HEADER -->
 
   <header class="header">
     <div class="container navbar">
 
-      <a href="#home" class="brand" aria-label="SPM home">
+      <a href="index.html" class="brand" aria-label="SPM home">
         <img
           src="images/logo.png"
           alt="SPM Lorry Workshop and Transport logo">
@@ -877,10 +842,10 @@
 
       <nav class="nav-menu" id="navMenu" aria-label="Main navigation">
 
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link" href="#about">About Us</a>
-        <a class="nav-link" href="#services">Services</a>
-        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="index.html#about">About Us</a>
+        <a class="nav-link active" href="#services" aria-current="page">Services</a>
+        <a class="nav-link" href="index.html#experience">Experience</a>
         <a class="nav-link" href="#contact">Contact</a>
 
         <a
@@ -896,19 +861,12 @@
     </div>
   </header>
 
-  <!-- =========================================
-       MAIN CONTENT
-  ========================================= -->
+  <!-- MAIN CONTENT -->
 
   <main>
 
-    <!-- WORKSHOP SERVICES -->
-
     <section class="workshop-services" id="services">
-
       <div class="container">
-
-        <!-- SECTION HEADING -->
 
         <div class="section-header">
 
@@ -927,35 +885,26 @@
           </p>
 
           <div class="service-count">
-            <strong>30+</strong>
+            <strong>30</strong>
             Heavy Vehicle Services
           </div>
 
         </div>
 
-        <!-- SERVICE CATEGORY GRID -->
-
         <div class="services-grid">
 
-          <!-- 01 ENGINE AND TRANSMISSION -->
+          <!-- 01: ENGINE AND TRANSMISSION -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                ⚙️
-              </div>
-
+              <div class="category-icon" aria-hidden="true">⚙️</div>
               <div class="category-heading">
                 <h2>Engine and Transmission</h2>
                 <p>Powertrain repair and servicing</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="1">
-
               <li><span class="service-check">✓</span><span>Heavy Commercial Vehicle Repair</span></li>
               <li><span class="service-check">✓</span><span>Lorry Engine Repair</span></li>
               <li><span class="service-check">✓</span><span>Engine Overhauling and Reconditioning</span></li>
@@ -963,59 +912,41 @@
               <li><span class="service-check">✓</span><span>Clutch Repair and Replacement</span></li>
               <li><span class="service-check">✓</span><span>Differential Repair and Servicing</span></li>
               <li><span class="service-check">✓</span><span>Axle Repair and Replacement</span></li>
-
             </ol>
-
           </article>
 
-          <!-- 02 BRAKING, STEERING AND SUSPENSION -->
+          <!-- 02: BRAKING, STEERING AND SUSPENSION -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                🛞
-              </div>
-
+              <div class="category-icon" aria-hidden="true">🛞</div>
               <div class="category-heading">
                 <h2>Braking, Steering and Suspension</h2>
                 <p>Control, handling and road safety</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="8">
-
               <li><span class="service-check">✓</span><span>Brake System Repair and Servicing</span></li>
               <li><span class="service-check">✓</span><span>Air Brake System Repair</span></li>
               <li><span class="service-check">✓</span><span>Suspension System Repair</span></li>
               <li><span class="service-check">✓</span><span>Steering System Repair</span></li>
               <li><span class="service-check">✓</span><span>Wheel Alignment and Balancing</span></li>
-
             </ol>
-
           </article>
 
-          <!-- 03 COOLING, ELECTRICAL AND FUEL -->
+          <!-- 03: COOLING, ELECTRICAL AND FUEL -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                🔋
-              </div>
-
+              <div class="category-icon" aria-hidden="true">🔋</div>
               <div class="category-heading">
                 <h2>Cooling, Electrical and Fuel</h2>
                 <p>Electrical and engine support systems</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="13">
-
               <li><span class="service-check">✓</span><span>Radiator and Cooling System Repair</span></li>
               <li><span class="service-check">✓</span><span>Vehicle Electrical System Repair</span></li>
               <li><span class="service-check">✓</span><span>Battery Testing and Replacement</span></li>
@@ -1023,82 +954,56 @@
               <li><span class="service-check">✓</span><span>Diesel Fuel Injection System Servicing</span></li>
               <li><span class="service-check">✓</span><span>Fuel Pump Repair and Servicing</span></li>
               <li><span class="service-check">✓</span><span>Air Compressor Repair and Servicing</span></li>
-
             </ol>
-
           </article>
 
-          <!-- 04 HYDRAULIC, CHASSIS AND FABRICATION -->
+          <!-- 04: HYDRAULIC, CHASSIS AND FABRICATION -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                🔧
-              </div>
-
+              <div class="category-icon" aria-hidden="true">🔧</div>
               <div class="category-heading">
                 <h2>Hydraulic, Chassis and Fabrication</h2>
                 <p>Structural repair and metalwork</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="20">
-
               <li><span class="service-check">✓</span><span>Hydraulic System Repair</span></li>
               <li><span class="service-check">✓</span><span>Chassis Repair and Reinforcement</span></li>
               <li><span class="service-check">✓</span><span>Welding and Metal Fabrication</span></li>
-
             </ol>
-
           </article>
 
-          <!-- 05 TYRES AND GENERAL MAINTENANCE -->
+          <!-- 05: TYRES AND GENERAL MAINTENANCE -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                🛠️
-              </div>
-
+              <div class="category-icon" aria-hidden="true">🛠️</div>
               <div class="category-heading">
                 <h2>Tyres and General Maintenance</h2>
                 <p>Routine care and preventive service</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="23">
-
               <li><span class="service-check">✓</span><span>Tyre Replacement and Puncture Repair</span></li>
               <li><span class="service-check">✓</span><span>Engine Oil Change and Lubrication</span></li>
               <li><span class="service-check">✓</span><span>Preventive Maintenance and Inspection</span></li>
               <li><span class="service-check">✓</span><span>Periodic Lorry Servicing</span></li>
               <li><span class="service-check">✓</span><span>Spare Parts Replacement</span></li>
-
             </ol>
-
           </article>
 
-          <!-- 06 DIAGNOSTICS AND ROADSIDE SUPPORT -->
+          <!-- 06: DIAGNOSTICS AND ROADSIDE SUPPORT -->
 
           <article class="service-category">
-
             <header class="category-header">
-
-              <div class="category-icon" aria-hidden="true">
-                🚚
-              </div>
-
+              <div class="category-icon" aria-hidden="true">🚚</div>
               <div class="category-heading">
                 <h2>Diagnostics and Roadside Support</h2>
                 <p>Fault finding and breakdown assistance</p>
               </div>
-
             </header>
 
             <ol class="service-list" start="28">
@@ -1106,7 +1011,6 @@
               <li><span class="service-check">✓</span><span>On-Site Lorry Repair</span></li>
               <li><span class="service-check">✓</span><span>Heavy Vehicle Breakdown Assistance</span></li>
             </ol>
-
           </article>
 
         </div>
@@ -1116,7 +1020,6 @@
         <section class="workshop-cta" id="contact">
 
           <div class="cta-content">
-
             <h2>
               Need Help With Your <span>Lorry?</span>
             </h2>
@@ -1125,7 +1028,6 @@
               Contact SPM Lorry Workshop for service enquiries,
               repair assistance and heavy vehicle maintenance.
             </p>
-
           </div>
 
           <a
@@ -1137,26 +1039,22 @@
 
             <span aria-hidden="true">✆</span>
             Contact on WhatsApp
-
           </a>
 
         </section>
 
       </div>
-
     </section>
 
   </main>
 
-  <!-- =========================================
-       FOOTER
-  ========================================= -->
+  <!-- FOOTER -->
 
   <footer class="footer" id="footer">
 
     <div class="container footer-main">
 
-      <a class="footer-brand" href="#home" aria-label="SPM home">
+      <a class="footer-brand" href="index.html" aria-label="SPM home">
 
         <span class="brand-mark">SPM</span>
 
@@ -1174,12 +1072,10 @@
       </p>
 
       <nav class="footer-links" aria-label="Footer navigation">
-
         <a href="index.html">Home</a>
-        <a href="#about">About Us</a>
+        <a href="index.html#about">About Us</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
-
       </nav>
 
     </div>
@@ -1197,12 +1093,10 @@
 
   </footer>
 
-  <!-- =========================================
-       JAVASCRIPT
-  ========================================= -->
+  <!-- JAVASCRIPT -->
 
   <script>
-    // Automatically update the copyright year
+    // Automatically update copyright year
     const yearElement = document.getElementById("year");
 
     if (yearElement) {
@@ -1217,29 +1111,50 @@
       menuToggle.addEventListener("click", function () {
         const isOpen = navMenu.classList.toggle("is-open");
 
-        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+          "aria-expanded",
+          String(isOpen)
+        );
 
         menuToggle.setAttribute(
           "aria-label",
-          isOpen ? "Close navigation menu" : "Open navigation menu"
+          isOpen
+            ? "Close navigation menu"
+            : "Open navigation menu"
         );
       });
 
-      // Close the mobile menu after selecting a link
+      // Close the menu after clicking a navigation link
       navMenu.querySelectorAll("a").forEach(function (link) {
         link.addEventListener("click", function () {
           navMenu.classList.remove("is-open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          menuToggle.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+          );
         });
       });
 
-      // Close the mobile menu when returning to desktop width
+      // Reset menu when returning to desktop width
       window.addEventListener("resize", function () {
         if (window.innerWidth > 800) {
           navMenu.classList.remove("is-open");
-          menuToggle.setAttribute("aria-expanded", "false");
-          menuToggle.setAttribute("aria-label", "Open navigation menu");
+
+          menuToggle.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+          menuToggle.setAttribute(
+            "aria-label",
+            "Open navigation menu"
+          );
         }
       });
     }
