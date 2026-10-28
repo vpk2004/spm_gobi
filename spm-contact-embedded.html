@@ -14,7 +14,6 @@
        CONTACT PAGE — NAVY BLUE & YELLOW
        CSS is embedded in this HTML file.
        ========================================================= */
-
     :root {
       --navy: #082b59;
       --navy-dark: #06182e;
@@ -189,14 +188,12 @@
     }
 
     .form-heading { margin-bottom: 28px; }
-
     .form-heading h2 {
       margin: 0 0 8px;
       color: var(--navy);
       font-size: 27px;
       line-height: 1.3;
     }
-
     .form-heading p {
       margin: 0;
       color: var(--muted);
@@ -341,233 +338,233 @@
   </style>
 </head>
 
-<body>
-  <main>
-    <section class="contact-section" id="contact">
-      <div class="contact-container">
-
-        <header class="contact-intro">
-          <span class="contact-tag" data-i18n="contactTag">CONTACT SPM</span>
-          <h1 data-i18n="contactTitle">Let's Get Your Lorry Moving</h1>
-          <p data-i18n="contactDescription">
-            Contact us for workshop services, heavy vehicle repairs,
-            breakdown assistance and lorry transport requirements.
-          </p>
-        </header>
-
-        <div class="contact-layout">
-          <aside class="contact-info">
-            <h2 data-i18n="contactInfoTitle">Contact Information</h2>
-            <p data-i18n="contactInfoDescription">Tell us what you need. Our team is ready to help.</p>
-
-            <div class="contact-info-item">
-              <span class="contact-icon" aria-hidden="true">☎</span>
-              <div>
-                <h3 data-i18n="phoneLabel">PHONE</h3>
-                <a href="tel:+919443896946">Vaudevan M: 94438 96946</a>
-                <a href="tel:+919488778998">MuthuSamy: 94887 78998</a>
-              </div>
+  <body>
+      <main>
+        <section class="contact-section" id="contact">
+          <div class="contact-container">
+    
+            <header class="contact-intro">
+              <span class="contact-tag" data-i18n="contactTag">CONTACT SPM</span>
+              <h1 data-i18n="contactTitle">Let's Get Your Lorry Moving</h1>
+              <p data-i18n="contactDescription">
+                Contact us for workshop services, heavy vehicle repairs,
+                breakdown assistance and lorry transport requirements.
+              </p>
+            </header>
+    
+            <div class="contact-layout">
+              <aside class="contact-info">
+                <h2 data-i18n="contactInfoTitle">Contact Information</h2>
+                <p data-i18n="contactInfoDescription">Tell us what you need. Our team is ready to help.</p>
+    
+                <div class="contact-info-item">
+                  <span class="contact-icon" aria-hidden="true">☎</span>
+                  <div>
+                    <h3 data-i18n="phoneLabel">PHONE</h3>
+                    <a href="tel:+919443896946">Vaudevan M: 94438 96946</a>
+                    <a href="tel:+919488778998">MuthuSamy: 94887 78998</a>
+                  </div>
+                </div>
+    
+                <div class="contact-info-item">
+                  <span class="contact-icon" aria-hidden="true">⌖</span>
+                  <div>
+                    <h3 data-i18n="addressLabel">LOCATION</h3>
+                    <p data-i18n="addressText">Periye Vaikal, Near Bus Stand, Tamil Nadu, India</p>
+                  </div>
+                </div>
+    
+                <div class="contact-info-item">
+                  <span class="contact-icon" aria-hidden="true">◷</span>
+                  <div>
+                    <h3 data-i18n="serviceLabelInfo">SERVICES</h3>
+                    <p data-i18n="serviceInfo">Lorry repair, maintenance, breakdown support and goods transport.</p>
+                  </div>
+                </div>
+    
+                <a class="contact-whatsapp-link"
+                   href="https://wa.me/919443896946"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   data-i18n="directWhatsapp">Chat Directly on WhatsApp ↗</a>
+              </aside>
+    
+              <form class="contact-form" id="contactForm">
+                <div class="form-heading">
+                  <h2 data-i18n="formTitle">Send a Service Enquiry</h2>
+                  <p data-i18n="formIntro">Complete the form to prepare your enquiry.</p>
+                </div>
+    
+                <div class="form-row">
+                  <label>
+                    <span data-i18n="nameLabel">Full Name *</span>
+                    <input name="name" type="text" autocomplete="name"
+                           placeholder="Enter your name" data-i18n-placeholder="namePlaceholder"
+                           minlength="2" maxlength="100" required>
+                  </label>
+    
+                  <label>
+                    <span data-i18n="emailLabel">Email Address</span>
+                    <input name="email" type="email" autocomplete="email"
+                           placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder"
+                           maxlength="254">
+                  </label>
+                </div>
+    
+                <div class="form-row">
+                  <label>
+                    <span data-i18n="phoneInputLabel">Phone Number *</span>
+                    <input name="phone" type="tel" autocomplete="tel"
+                           placeholder="Enter your phone number" data-i18n-placeholder="phonePlaceholder"
+                           minlength="7" maxlength="20" pattern="[0-9+() -]{7,20}"
+                           title="Enter a valid phone number using digits, spaces, +, brackets or hyphens."
+                           data-i18n-title="phoneValidation" required>
+                  </label>
+    
+                  <label>
+                    <span data-i18n="serviceLabel">Enquiry Type *</span>
+                    <select name="service" required>
+                      <option value="" data-i18n="chooseService">Choose a service</option>
+                      <option value="Workshop Support">Workshop Support</option>
+                      <option value="Heavy Vehicle Repair">Heavy Vehicle Repair</option>
+                      <option value="Engine Repair / Overhauling">Engine Repair / Overhauling</option>
+                      <option value="Gearbox / Clutch Repair">Gearbox / Clutch Repair</option>
+                      <option value="Brake / Suspension Repair">Brake / Suspension Repair</option>
+                      <option value="Electrical / Battery Service">Electrical / Battery Service</option>
+                      <option value="Tyre Service">Tyre Service</option>
+                      <option value="Periodic Servicing">Periodic Servicing</option>
+                      <option value="Breakdown Assistance">Breakdown Assistance</option>
+                      <option value="On-Site Lorry Repair">On-Site Lorry Repair</option>
+                      <option value="Lorry Load Transport">Lorry Load Transport</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </label>
+                </div>
+    
+                <label class="message-label">
+                  <span data-i18n="detailsLabel">Vehicle / Transport Details *</span>
+                  <textarea name="message" rows="5" minlength="10" maxlength="2000"
+                    placeholder="For transport: pickup location, destination and load details. For workshop or breakdown: vehicle details and current location."
+                    data-i18n-placeholder="detailsPlaceholder" required></textarea>
+                </label>
+    
+                <button class="btn btn-dark submit-btn" type="submit">
+                  <span data-i18n="submitButton">Prepare Enquiry</span>
+                  <span aria-hidden="true">↗</span>
+                </button>
+    
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                <p class="form-disclaimer" data-i18n="disclaimer">
+                  This form opens WhatsApp with your enquiry. Review the message and press Send in WhatsApp.
+                  Information is not stored on this website.
+                </p>
+              </form>
             </div>
-
-            <div class="contact-info-item">
-              <span class="contact-icon" aria-hidden="true">⌖</span>
-              <div>
-                <h3 data-i18n="addressLabel">LOCATION</h3>
-                <p data-i18n="addressText">Periye Vaikal, Near Bus Stand, Tamil Nadu, India</p>
-              </div>
-            </div>
-
-            <div class="contact-info-item">
-              <span class="contact-icon" aria-hidden="true">◷</span>
-              <div>
-                <h3 data-i18n="serviceLabelInfo">SERVICES</h3>
-                <p data-i18n="serviceInfo">Lorry repair, maintenance, breakdown support and goods transport.</p>
-              </div>
-            </div>
-
-            <a class="contact-whatsapp-link"
-               href="https://wa.me/919443896946"
-               target="_blank"
-               rel="noopener noreferrer"
-               data-i18n="directWhatsapp">Chat Directly on WhatsApp ↗</a>
-          </aside>
-
-          <form class="contact-form" id="contactForm">
-            <div class="form-heading">
-              <h2 data-i18n="formTitle">Send a Service Enquiry</h2>
-              <p data-i18n="formIntro">Complete the form to prepare your enquiry.</p>
-            </div>
-
-            <div class="form-row">
-              <label>
-                <span data-i18n="nameLabel">Full Name *</span>
-                <input name="name" type="text" autocomplete="name"
-                       placeholder="Enter your name" data-i18n-placeholder="namePlaceholder"
-                       minlength="2" maxlength="100" required>
-              </label>
-
-              <label>
-                <span data-i18n="emailLabel">Email Address</span>
-                <input name="email" type="email" autocomplete="email"
-                       placeholder="you@example.com" data-i18n-placeholder="emailPlaceholder"
-                       maxlength="254">
-              </label>
-            </div>
-
-            <div class="form-row">
-              <label>
-                <span data-i18n="phoneInputLabel">Phone Number *</span>
-                <input name="phone" type="tel" autocomplete="tel"
-                       placeholder="Enter your phone number" data-i18n-placeholder="phonePlaceholder"
-                       minlength="7" maxlength="20" pattern="[0-9+() -]{7,20}"
-                       title="Enter a valid phone number using digits, spaces, +, brackets or hyphens."
-                       data-i18n-title="phoneValidation" required>
-              </label>
-
-              <label>
-                <span data-i18n="serviceLabel">Enquiry Type *</span>
-                <select name="service" required>
-                  <option value="" data-i18n="chooseService">Choose a service</option>
-                  <option value="Workshop Support">Workshop Support</option>
-                  <option value="Heavy Vehicle Repair">Heavy Vehicle Repair</option>
-                  <option value="Engine Repair / Overhauling">Engine Repair / Overhauling</option>
-                  <option value="Gearbox / Clutch Repair">Gearbox / Clutch Repair</option>
-                  <option value="Brake / Suspension Repair">Brake / Suspension Repair</option>
-                  <option value="Electrical / Battery Service">Electrical / Battery Service</option>
-                  <option value="Tyre Service">Tyre Service</option>
-                  <option value="Periodic Servicing">Periodic Servicing</option>
-                  <option value="Breakdown Assistance">Breakdown Assistance</option>
-                  <option value="On-Site Lorry Repair">On-Site Lorry Repair</option>
-                  <option value="Lorry Load Transport">Lorry Load Transport</option>
-                  <option value="Other">Other</option>
-                </select>
-              </label>
-            </div>
-
-            <label class="message-label">
-              <span data-i18n="detailsLabel">Vehicle / Transport Details *</span>
-              <textarea name="message" rows="5" minlength="10" maxlength="2000"
-                placeholder="For transport: pickup location, destination and load details. For workshop or breakdown: vehicle details and current location."
-                data-i18n-placeholder="detailsPlaceholder" required></textarea>
-            </label>
-
-            <button class="btn btn-dark submit-btn" type="submit">
-              <span data-i18n="submitButton">Prepare Enquiry</span>
-              <span aria-hidden="true">↗</span>
-            </button>
-
-            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-            <p class="form-disclaimer" data-i18n="disclaimer">
-              This form opens WhatsApp with your enquiry. Review the message and press Send in WhatsApp.
-              Information is not stored on this website.
-            </p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script>
-    /* =========================================================
-       SPM LORRY WORKSHOP & TRANSPORT
-       CONTACT FORM + WHATSAPP
-       JavaScript is embedded in this HTML file.
-       ========================================================= */
-
-    (() => {
-      "use strict";
-
-      // WhatsApp number must include country code, without + or spaces.
-      const WHATSAPP_NUMBER = "919443896946";
-      const contactForm = document.getElementById("contactForm");
-      const formStatus = document.getElementById("formStatus");
-
-      if (!contactForm) return;
-
-      const messages = {
-        en: {
-          opening: "Opening WhatsApp with your enquiry. Review the message and press Send.",
-          invalid: "Please complete all required fields correctly.",
-          name: "Name",
-          phone: "Phone",
-          email: "Email",
-          noEmail: "Not provided",
-          service: "Enquiry Type",
-          details: "Vehicle / Transport Details",
-          heading: "New Service Enquiry",
-          footer: "Sent through the SPM website contact form."
-        },
-        ta: {
-          opening: "உங்கள் விசாரணையுடன் WhatsApp திறக்கப்படுகிறது. செய்தியைச் சரிபார்த்து Send என்பதை அழுத்தவும்.",
-          invalid: "தேவையான அனைத்து விவரங்களையும் சரியாக நிரப்பவும்.",
-          name: "பெயர்",
-          phone: "தொலைபேசி",
-          email: "மின்னஞ்சல்",
-          noEmail: "வழங்கப்படவில்லை",
-          service: "விசாரணை வகை",
-          details: "வாகனம் / போக்குவரத்து விவரங்கள்",
-          heading: "புதிய சேவை விசாரணை",
-          footer: "SPM இணையதளப் படிவத்தின் மூலம் அனுப்பப்பட்டது."
-        }
-      };
-
-      function getLanguage() {
-        const language = (document.documentElement.lang || "en").toLowerCase();
-        return language.startsWith("ta") ? "ta" : "en";
-      }
-
-      function showStatus(message, isError = false) {
-        if (!formStatus) return;
-        formStatus.textContent = message;
-        formStatus.classList.toggle("error", isError);
-      }
-
-      contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const language = getLanguage();
-        const text = messages[language];
-
-        if (!contactForm.reportValidity()) {
-          showStatus(text.invalid, true);
-          return;
-        }
-
-        const data = new FormData(contactForm);
-        const name = String(data.get("name") || "").trim();
-        const email = String(data.get("email") || "").trim();
-        const phone = String(data.get("phone") || "").trim();
-        const service = String(data.get("service") || "").trim();
-        const details = String(data.get("message") || "").trim();
-
-        if (name.length < 2 || !phone || !service || details.length < 10) {
-          showStatus(text.invalid, true);
-          return;
-        }
-
-        const whatsappMessage = [
-          "🚛 SPM LORRY WORKSHOP & TRANSPORT",
-          "",
-          text.heading,
-          "--------------------------------",
-          `${text.name}: ${name}`,
-          `${text.phone}: ${phone}`,
-          `${text.email}: ${email || text.noEmail}`,
-          `${text.service}: ${service}`,
-          "",
-          `${text.details}:`,
-          details,
-          "",
-          text.footer
-        ].join("\n");
-
-        const whatsappURL =
-          `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
-
-        showStatus(text.opening, false);
-        window.location.href = whatsappURL;
-      });
-    })();
-  </script>
-</body>
+          </div>
+        </section>
+      </main>
+    
+      <script>
+        /* =========================================================
+           SPM LORRY WORKSHOP & TRANSPORT
+           CONTACT FORM + WHATSAPP
+           JavaScript is embedded in this HTML file.
+           ========================================================= */
+    
+        (() => {
+          "use strict";
+    
+          // WhatsApp number must include country code, without + or spaces.
+          const WHATSAPP_NUMBER = "919443896946";
+          const contactForm = document.getElementById("contactForm");
+          const formStatus = document.getElementById("formStatus");
+    
+          if (!contactForm) return;
+    
+          const messages = {
+            en: {
+              opening: "Opening WhatsApp with your enquiry. Review the message and press Send.",
+              invalid: "Please complete all required fields correctly.",
+              name: "Name",
+              phone: "Phone",
+              email: "Email",
+              noEmail: "Not provided",
+              service: "Enquiry Type",
+              details: "Vehicle / Transport Details",
+              heading: "New Service Enquiry",
+              footer: "Sent through the SPM website contact form."
+            },
+            ta: {
+              opening: "உங்கள் விசாரணையுடன் WhatsApp திறக்கப்படுகிறது. செய்தியைச் சரிபார்த்து Send என்பதை அழுத்தவும்.",
+              invalid: "தேவையான அனைத்து விவரங்களையும் சரியாக நிரப்பவும்.",
+              name: "பெயர்",
+              phone: "தொலைபேசி",
+              email: "மின்னஞ்சல்",
+              noEmail: "வழங்கப்படவில்லை",
+              service: "விசாரணை வகை",
+              details: "வாகனம் / போக்குவரத்து விவரங்கள்",
+              heading: "புதிய சேவை விசாரணை",
+              footer: "SPM இணையதளப் படிவத்தின் மூலம் அனுப்பப்பட்டது."
+            }
+          };
+    
+          function getLanguage() {
+            const language = (document.documentElement.lang || "en").toLowerCase();
+            return language.startsWith("ta") ? "ta" : "en";
+          }
+    
+          function showStatus(message, isError = false) {
+            if (!formStatus) return;
+            formStatus.textContent = message;
+            formStatus.classList.toggle("error", isError);
+          }
+    
+          contactForm.addEventListener("submit", (event) => {
+            event.preventDefault();
+    
+            const language = getLanguage();
+            const text = messages[language];
+    
+            if (!contactForm.reportValidity()) {
+              showStatus(text.invalid, true);
+              return;
+            }
+    
+            const data = new FormData(contactForm);
+            const name = String(data.get("name") || "").trim();
+            const email = String(data.get("email") || "").trim();
+            const phone = String(data.get("phone") || "").trim();
+            const service = String(data.get("service") || "").trim();
+            const details = String(data.get("message") || "").trim();
+    
+            if (name.length < 2 || !phone || !service || details.length < 10) {
+              showStatus(text.invalid, true);
+              return;
+            }
+    
+            const whatsappMessage = [
+              "🚛 SPM LORRY WORKSHOP & TRANSPORT",
+              "",
+              text.heading,
+              "--------------------------------",
+              `${text.name}: ${name}`,
+              `${text.phone}: ${phone}`,
+              `${text.email}: ${email || text.noEmail}`,
+              `${text.service}: ${service}`,
+              "",
+              `${text.details}:`,
+              details,
+              "",
+              text.footer
+            ].join("\n");
+    
+            const whatsappURL =
+              `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+            showStatus(text.opening, false);
+            window.location.href = whatsappURL;
+          });
+        })();
+      </script>
+  </body>
 </html>
